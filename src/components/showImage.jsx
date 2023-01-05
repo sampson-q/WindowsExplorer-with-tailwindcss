@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
+import showImage from '../assets/windowsExplorer.png'
 
-import windowsExplorer from '../assets/windowsExplorer.png';
-
-class ShowImage extends Component {
+class ShowImage extends Component { 
     render() { 
         return (
             <div>
-                <img src={windowsExplorer} alt="" />
+                <img src={showImage} alt="" />
             </div>
         );
     }

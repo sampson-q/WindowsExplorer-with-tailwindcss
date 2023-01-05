@@ -11,7 +11,7 @@ class ExplorerTab extends Component {
                         </svg>
                     </div>
                     
-                    <div className='folder-name'>Season 3</div>
+                    <div className='folder-name'>SEASON 3</div>
                     
                     <div className='close-btn'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-full h-6">

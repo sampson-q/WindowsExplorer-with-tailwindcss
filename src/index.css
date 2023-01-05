@@ -4,11 +4,11 @@
 
 @layer components {
   .explorer-window {
-    @apply shadow-black shadow-md p-0 border border-[#5e5d5d] bg-[#191919] rounded-md h-[90vh] mt-5 mx-auto w-3/4;
+    @apply shadow-black shadow-md p-0 border border-[#5e5d5d] bg-[#191919] rounded-md h-[90vh] mt-5 mx-auto w-3/5;
   }
 
   .title-bar {
-    @apply bg-[#030A23] h-[50px] rounded-t-md p-2 px-2 columns-auto flex;
+    @apply bg-[#030A23] h-[67px] rounded-t-md p-5 px-5 columns-auto flex;
   }
 
   .explorer-tab {
@@ -46,10 +46,76 @@
   .btn-text {
     @apply mx-2;
   }
+
+  .body-head {
+    @apply flex text-white p-2;
+  }
+
+  .body-head-nav {
+    @apply flex gap-5 p-2;
+  }
+
+  .url-div {
+    @apply border flex gap-5 border-[#5e5d5d] p-2;
+  }
+
+  .url-div-text {
+    @apply text-[14px];
+  }
+
+  .body-body {
+    @apply flex py-3;
+  }
+
+  .left-pane {
+    @apply border-r border-[#5e5d5d] px-3 w-56 h-[430px] overflow-y-scroll overflow-x-hidden;
+  }
+
+  .left-pane-btn {
+    @apply flex text-white rounded-sm px-10 p-2 py-1 w-full;
+  }
+
+  .left-pane-btnn {
+    @apply flex text-white rounded-sm w-full py-1;
+  }
+
+  .left-pane-btn-text {
+    @apply px-3;
+  }
+
+  .content-pane {
+    @apply p-3 text-white;
+  }
+
+  .content-pane-header {
+    @apply flex mt-[-14px];
+  }
+
 }
 
 @layer base {
   body {
     @apply bg-[#1b1b1fe1]
   }
+
+  button:hover {
+    @apply bg-[#5e5d5d];
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#171717];
+
+}
+ 
+::-webkit-scrollbar-thumb {
+  @apply bg-[#959595] rounded-sm;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white; 
 }
